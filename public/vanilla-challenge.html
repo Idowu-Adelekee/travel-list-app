@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../src/index.css" />
+    <title>Vanilla JS steps</title>
+  </head>
+
+  <style>
+    .container {
+      width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div>
+        <button class="step-minus">&minus;</button>
+        <span class="step">Step: 1</span>
+        <button class="step-add">+</button>
+      </div>
+
+      <div>
+        <button class="count-minus">&minus;</button>
+        <span class="count"> Count: 0</span>
+        <button class="count-add">+</button>
+      </div>
+
+      <p class="message">Today is January Tue 19 2026</p>
+    </div>
+
+    <script>
+      // Selecting element
+      const btnStepAdd = document.querySelector(".step-add");
+      const btnStepMinus = document.querySelector(".step-minus");
+      const btnCountAdd = document.querySelector(".count-add");
+      const btnCountMinus = document.querySelector(".count-minus");
+      const stepBox = document.querySelector(".step");
+      const countBox = document.querySelector(".count");
+      const message = document.querySelector(".message");
+
+      // State variables
+      // let step = 1;
+      // let count = 0;
+      // let state = step + count;
+
+      let step = 1;
+      let count = 0;
+      // let state = step + count;
+
+      // Step function
+      btnStepAdd.addEventListener("click", function () {
+        step++;
+        stepBox.textContent = `Step: ${step}`;
+      });
+
+      btnStepMinus.addEventListener("click", function () {
+        step--;
+        stepBox.textContent = `Count: ${step}`;
+      });
+
+      // Count function
+      btnCountAdd.addEventListener("click", function () {
+        count = count + step;
+        countBox.textContent = `Count: ${count}`;
+
+        message.textContent = `Today is January Tue ${new Date().getDate() + count} ${new Date().getFullYear()}`;
+      });
+
+      btnCountMinus.addEventListener("click", function () {
+        count--;
+        countBox.textContent = `Count: ${count}`;
+
+        message.textContent = `Today is January Tue ${new Date().getDate() + count} ${new Date().getFullYear()}`;
+      });
+
+      // To chunks
+      // 1. The step increases by 1.
+      // 2. The count respond to the step by jumping to the current state of the step
+    </script>
+  </body>
+</html>
