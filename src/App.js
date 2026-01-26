@@ -112,3 +112,5 @@ function Thanks() {
 function Okay() {
   return <nothing>Not quite</nothing>;
 }
+
+function React() {}
