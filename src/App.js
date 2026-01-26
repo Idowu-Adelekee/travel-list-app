@@ -108,3 +108,7 @@ function Great() {
 function Thanks() {
   return;
 }
+
+function Okay() {
+  return <nothing>Not quite</nothing>;
+}
