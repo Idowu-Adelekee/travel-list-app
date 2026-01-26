@@ -100,3 +100,11 @@ function Step() {
 function ThankYou() {
   return <span>God is great</span>;
 }
+
+function Great() {
+  return <div>Got it</div>;
+}
+
+function Thanks() {
+  return;
+}
