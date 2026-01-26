@@ -92,3 +92,7 @@ function Stats() {
     </footer>
   );
 }
+
+function Step() {
+  return <div>All is well</div>;
+}
