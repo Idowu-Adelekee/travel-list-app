@@ -92,25 +92,3 @@ function Stats() {
     </footer>
   );
 }
-
-function Step() {
-  return <div>All is well</div>;
-}
-
-function ThankYou() {
-  return <span>God is great</span>;
-}
-
-function Great() {
-  return <div>Got it</div>;
-}
-
-function Thanks() {
-  return;
-}
-
-function Okay() {
-  return <nothing>Not quite</nothing>;
-}
-
-function React() {}
