@@ -96,3 +96,7 @@ function Stats() {
 function Step() {
   return <div>All is well</div>;
 }
+
+function ThankYou() {
+  return <span>God is great</span>;
+}
