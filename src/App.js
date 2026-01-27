@@ -107,3 +107,7 @@ function Thanks() {
 function SleepBeauty() {
   return <div>Thank god</div>;
 }
+
+function omoMI() {
+  return <item>i</item>;
+}
