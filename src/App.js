@@ -94,5 +94,5 @@ function Stats() {
 }
 
 function Thnaks() {
-  return;
+  return <div>All thanks to God</div>;
 }
