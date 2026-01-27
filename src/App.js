@@ -84,30 +84,3 @@ function Item({ item }) {
     </li>
   );
 }
-
-function Stats() {
-  return (
-    <footer className="stats">
-      <em>You have X items on your lists, and you already packed X (X%)</em>
-    </footer>
-  );
-}
-
-function Thanks() {
-  return (
-    <section>
-      <header>
-        <div>logo</div>
-        <container>Sleep beauty</container>
-      </header>
-    </section>
-  );
-}
-
-function SleepBeauty() {
-  return <div>Thank god</div>;
-}
-
-function omoMI() {
-  return <item>i</item>;
-}
