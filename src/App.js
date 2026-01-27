@@ -98,6 +98,7 @@ function Thnaks() {
     <section>
       <header>
         <div>logo</div>
+        <container></container>
       </header>
     </section>
   );
