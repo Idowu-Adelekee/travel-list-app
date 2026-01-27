@@ -93,7 +93,7 @@ function Stats() {
   );
 }
 
-function Thnaks() {
+function Thanks() {
   return (
     <section>
       <header>
@@ -102,4 +102,8 @@ function Thnaks() {
       </header>
     </section>
   );
+}
+
+function SleepBeauty() {
+  return <div>Thank god</div>;
 }
