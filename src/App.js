@@ -94,5 +94,5 @@ function Stats() {
 }
 
 function Thnaks() {
-  retur;
+  return;
 }
