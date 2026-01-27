@@ -98,7 +98,7 @@ function Thnaks() {
     <section>
       <header>
         <div>logo</div>
-        <container></container>
+        <container>Sleep beauty</container>
       </header>
     </section>
   );
