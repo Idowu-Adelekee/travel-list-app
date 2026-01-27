@@ -92,3 +92,7 @@ function Stats() {
     </footer>
   );
 }
+
+function Thnaks() {
+  retur;
+}
