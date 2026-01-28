@@ -86,5 +86,5 @@ function Item({ item }) {
 }
 
 function Logo() {
-  return span;
+  return <span></span>;
 }
