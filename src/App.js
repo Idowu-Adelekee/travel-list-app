@@ -84,8 +84,3 @@ function Item({ item }) {
     </li>
   );
 }
-
-const Logo = function () {
-  console.log("Hello");
-  return "Function expression";
-};
