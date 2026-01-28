@@ -84,7 +84,3 @@ function Item({ item }) {
     </li>
   );
 }
-
-function Logo() {
-  return <span></span>;
-}
