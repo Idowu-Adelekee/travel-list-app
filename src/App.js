@@ -85,6 +85,6 @@ function Item({ item }) {
   );
 }
 
-function Back() {
-  return <div>Return back to react, and we stick to the plan now</div>;
+function Logo() {
+  return span;
 }
