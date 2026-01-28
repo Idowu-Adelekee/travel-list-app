@@ -87,4 +87,5 @@ function Item({ item }) {
 
 const Logo = function () {
   console.log("Hello");
+  return "Function expression";
 };
