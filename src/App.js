@@ -73,20 +73,20 @@ function Form() {
   );
 }
 
-// function PackingList() {
-//   return (
-//     <div className="list">
-//       {/* // We render item in the packing list
-//      //  */}
+function PackingList() {
+  return (
+    <div className="list">
+      {/* // We render item in the packing list
+     //  */}
 
-//       <ul>
-//         {initialItems.map((item) => (
-//           <Item item={item} key={item.id} />
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// }
+      <ul>
+        {initialItems.map((item) => (
+          <Item item={item} key={item.id} />
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 // function Item({ item }) {
 //   return (
