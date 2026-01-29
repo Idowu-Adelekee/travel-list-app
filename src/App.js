@@ -29,9 +29,22 @@ function Form() {
 }
 
 function PackingList() {
-  return <div className="list">List</div>;
+  return (
+    <div className="list">
+      {/* // We render item in the packing list
+     //  */}
 
-  // We render item in the packing list
+      <ul>
+        {initialItems.map((item) => (
+          <Item item={item} key={item.id} />
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function Item({ item }) {
+  return <li>{item.description}</li>;
 }
 
 function Stats() {
