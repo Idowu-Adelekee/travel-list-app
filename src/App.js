@@ -12,7 +12,7 @@ export default function App() {
     <div className="app">
       <Logo />
       <Form />
-      <ParkingList />
+      {/* <ParkingList /> */}
       <Stats />
     </div>
   );
