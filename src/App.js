@@ -12,7 +12,7 @@ export default function App() {
     <div className="app">
       <Logo />
       <Form />
-      <PackingList />
+      <ParkingList />
       <Stats />
     </div>
   );
@@ -21,88 +21,98 @@ export default function App() {
 function Logo() {
   return <h1>🌲Far Away 💼</h1>;
 }
-function Form() {
-  // Three steps to implement controlled elements techniqu
-  // 1. Create a piece of states
-  // 2. Use the state value as the html value
-  // 3. Use the onChange props to handle the change event and set the state function to the value
 
-  const [description, setDescription] = useState("");
-  const [quantity, setQuantity] = useState(1);
+function Form() {}
 
-  function handleSubmit(e) {
-    e.preventDefault();
+function ParkingList() {}
 
-    const newItem = { description, quantity, packed: false, id: Date.now() };
-    const oldItem = { description };
-    if (!description) return;
+function Stats() {}
 
-    console.log(newItem);
-    console.log(oldItem);
+// function Logo() {
+//   return <h1></h1>;
+// }
+// function Form() {
+//   // Three steps to implement controlled elements techniqu
+//   // 1. Create a piece of states
+//   // 2. Use the state value as the html value
+//   // 3. Use the onChange props to handle the change event and set the state function to the value
 
-    console.log(e.target[1]);
+//   const [description, setDescription] = useState("");
+//   const [quantity, setQuantity] = useState(1);
 
-    setDescription("");
-    setQuantity(1);
-  }
+//   function handleSubmit(e) {
+//     e.preventDefault();
 
-  return (
-    <form className="add-form" onSubmit={handleSubmit}>
-      <h3>What do you need for your 😻 trip?</h3>
-      <select
-        value={quantity}
-        onChange={(e) => setQuantity(Number(e.target.value))}
-      >
-        {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
-          <option value={num} key={num}>
-            {num}
-          </option>
-        ))}
-        {/* <option value={1}>1</option>
-        <option value={1}>2</option>
-        <option value={3}>3</option> */}
-      </select>
-      <input
-        type="text"
-        placeholder="Item..."
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
-      />
-      <button>Add</button>
-    </form>
-  );
-}
+//     const newItem = { description, quantity, packed: false, id: Date.now() };
+//     const oldItem = { description };
+//     if (!description) return;
 
-function PackingList() {
-  return (
-    <div className="list">
-      {/* // We render item in the packing list
-     //  */}
+//     console.log(newItem);
+//     console.log(oldItem);
 
-      <ul>
-        {initialItems.map((item) => (
-          <Item item={item} key={item.id} />
-        ))}
-      </ul>
-    </div>
-  );
-}
+//     console.log(e.target[1]);
 
-function Item({ item }) {
-  return (
-    <li>
-      <span style={item.packed ? { textDecoration: "line-through" } : {}}>
-        {item.quantity} {item.description}
-      </span>
-      <button>❌</button>
-    </li>
-  );
-}
+//     setDescription("");
+//     setQuantity(1);
+//   }
 
-function Stats() {
-  return (
-    <footer className="stats">
-      <em>💼You have X items on your list, and you already packed X (X%)</em>
-    </footer>
-  );
-}
+//   return (
+//     <form className="add-form" onSubmit={handleSubmit}>
+//       <h3>What do you need for your 😻 trip?</h3>
+//       <select
+//         value={quantity}
+//         onChange={(e) => setQuantity(Number(e.target.value))}
+//       >
+//         {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
+//           <option value={num} key={num}>
+//             {num}
+//           </option>
+//         ))}
+//         {/* <option value={1}>1</option>
+//         <option value={1}>2</option>
+//         <option value={3}>3</option> */}
+//       </select>
+//       <input
+//         type="text"
+//         placeholder="Item..."
+//         value={description}
+//         onChange={(e) => setDescription(e.target.value)}
+//       />
+//       <button>Add</button>
+//     </form>
+//   );
+// }
+
+// function PackingList() {
+//   return (
+//     <div className="list">
+//       {/* // We render item in the packing list
+//      //  */}
+
+//       <ul>
+//         {initialItems.map((item) => (
+//           <Item item={item} key={item.id} />
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// }
+
+// function Item({ item }) {
+//   return (
+//     <li>
+//       <span style={item.packed ? { textDecoration: "line-through" } : {}}>
+//         {item.quantity} {item.description}
+//       </span>
+//       <button>❌</button>
+//     </li>
+//   );
+// }
+
+// function Stats() {
+//   return (
+//     <footer className="stats">
+//       <em>💼You have X items on your list, and you already packed X (X%)</em>
+//     </footer>
+//   );
+// }
