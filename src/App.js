@@ -24,9 +24,29 @@ function Logo() {
 
 function Form() {}
 
-function ParkingList() {}
+function ParkingList() {
+  return (
+    <div className="list">
+      <ul>
+        {initialItems.map((item) => (
+          <Item item={item} key={item.id} />
+        ))}
+      </ul>
+    </div>
+  );
+}
 
-function Stats() {}
+function Item({ item }) {
+  return <li>{item.description}</li>;
+}
+
+function Stats() {
+  return (
+    <footer className="stats">
+      <em>💼You have X items on your list, and you already packed X (X%)</em>
+    </footer>
+  );
+}
 
 // function Logo() {
 //   return <h1></h1>;
@@ -106,13 +126,5 @@ function Stats() {}
 //       </span>
 //       <button>❌</button>
 //     </li>
-//   );
-// }
-
-// function Stats() {
-//   return (
-//     <footer className="stats">
-//       <em>💼You have X items on your list, and you already packed X (X%)</em>
-//     </footer>
 //   );
 // }
