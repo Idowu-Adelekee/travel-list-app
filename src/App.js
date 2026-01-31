@@ -18,63 +18,6 @@ export default function App() {
   );
 }
 
-// function Logo() {
-//   return <h1>🌲Far Away 💼</h1>;
-// }
-
-// function Form() {
-//   const [quantity, setQuantity] = useState(1);
-//   const [description, setDescription] = useState("");
-//   console.log(quantity);
-
-//   function handleSubmit(e) {
-//     e.preventDefault();
-//     const newItems = { quantity, description, id: Date.now(), isParked: false };
-//     console.log(newItems);
-//   }
-
-//   return (
-//     <form className="add-form" onSubmit={handleSubmit}>
-//       <select value={quantity} onChange={(e) => setQuantity(e.target.value)}>
-//         {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
-//           <option key={num}>{num}</option>
-//         ))}
-//       </select>
-//       <input
-//         type="text"
-//         placeholder="items..."
-//         value={description}
-//         onChange={(e) => setDescription(e.target.value)}
-//       />
-//       <button>Add</button>
-//     </form>
-//   );
-// }
-
-// function ParkingList() {
-//   return (
-//     <div className="list">
-//       <ul>
-//         {initialItems.map((item) => (
-//           <Item item={item} key={item.id} />
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// }
-
-// function Item({ item }) {
-//   return <li>{item.description}</li>;
-// }
-
-// function Stats() {
-//   return (
-//     <footer className="stats">
-//       <em>💼You have X items on your list, and you already packed X (X%)</em>
-//     </footer>
-//   );
-// }
-
 function Logo() {
   return <h1>🌲Far Away 💼</h1>;
 }
