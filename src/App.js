@@ -159,4 +159,4 @@ const Person = function (firstName, birthYear) {
   this.birthYear = birthYear;
 };
 
-const idowu = new Person(idowu, 1998);
+const idowu = new Person("idowu", 1998);
