@@ -23,7 +23,29 @@ function Logo() {
 }
 function Form() {}
 
-function ParkingList() {}
+function ParkingList() {
+  return (
+    <div className="list">
+      <ul>
+        {initialItems.map((item) => (
+          <Item item={item} key={item.id} />
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function Item({ item }) {
+  return (
+    <li>
+      <span style={item.packed ? { textDecoration: "line-through" } : ""}>
+        {" "}
+        {item.description} {item.quantity}
+      </span>
+      <span>❌</span>
+    </li>
+  );
+}
 
 function Stats() {
   return (
