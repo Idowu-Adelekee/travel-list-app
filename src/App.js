@@ -144,3 +144,5 @@ function Stats() {
 //     </footer>
 //   );
 // }
+
+const noSickness = "In the name of Jesus";
