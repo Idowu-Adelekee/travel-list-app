@@ -1,3 +1,4 @@
+import { fireEvent } from "@testing-library/dom";
 import { useState } from "react";
 
 const initialItems = [
@@ -152,3 +153,10 @@ const reactIsDragging = true;
 
 let Jesus = "Regin";
 Jesus = true;
+
+const Person = function (firstName, birthYear) {
+  this.firstName = firstName;
+  this.birthYear = birthYear;
+};
+
+const idowu = new Person(idowu, 1998);
