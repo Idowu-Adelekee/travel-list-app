@@ -161,3 +161,4 @@ const Person = function (firstName, birthYear) {
 
 const idowu = new Person("idowu", 1998);
 const kehinde = new Person("Kehinde", 2002);
+const tolu = new Person("Tolulope", 2002);
