@@ -168,3 +168,5 @@ const nuru = new Person("Nurudeen", 2004);
 const titi = new Person("Titilope", 2000);
 const bola = new Person("Adebola", 1982);
 const tinu = new Person("Tinuola", 2002);
+
+console.log(tinu);
