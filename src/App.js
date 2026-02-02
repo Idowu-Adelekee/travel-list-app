@@ -164,3 +164,4 @@ const kehinde = new Person("Kehinde", 2002);
 const tolu = new Person("Tolulope", 2002);
 const ibrahim = new Person("Ibrahim", 2001);
 const deji = new Person("Adedeji", 1986);
+const nuru = new Person("Nurudeen", 2004);
