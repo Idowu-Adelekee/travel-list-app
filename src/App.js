@@ -165,3 +165,4 @@ const tolu = new Person("Tolulope", 2002);
 const ibrahim = new Person("Ibrahim", 2001);
 const deji = new Person("Adedeji", 1986);
 const nuru = new Person("Nurudeen", 2004);
+const titi = new Person("Titilope", 2000);
