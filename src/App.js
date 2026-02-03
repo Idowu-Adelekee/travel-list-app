@@ -155,6 +155,10 @@ function Stats() {
 //   );
 // }
 
+const fromArr = Array.from({ length: 30 }, (_, i) => i + 1).map(
+  (number) => number * 2,
+);
 
-const fromArr = Array.from({length: 30} (_, i) => i + 1);
+const useless = "Landlord";
+
 console.log(fromArr);
