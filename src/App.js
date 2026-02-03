@@ -154,13 +154,3 @@ function Stats() {
 //     </footer>
 //   );
 // }
-
-const fromArr = Array.from({ length: 30 }, (_, i) => i + 1).map(
-  (number) => number * 2,
-);
-
-const useless = "Landlord";
-const challenge = "False";
-const tizzle = "Sean";
-
-console.log(fromArr);
