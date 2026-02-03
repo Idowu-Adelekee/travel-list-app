@@ -22,7 +22,17 @@ export default function App() {
 function Logo() {
   return <h1>🌲Far Away 💼</h1>;
 }
-function Form() {}
+function Form() {
+  return (
+    <form className="add-form">
+      <select>
+        {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
+          <option>{num}</option>
+        ))}
+      </select>
+    </form>
+  );
+}
 
 function ParkingList() {
   return (
@@ -39,8 +49,7 @@ function ParkingList() {
 function Item({ item }) {
   return (
     <li>
-      <span style={item.packed ? { textDecoration: "line-through" } : ""}>
-        {" "}
+      <span style={item.packed ? { textDecoration: "line-through" } : {}}>
         {item.description} {item.quantity}
       </span>
       <span>❌</span>
@@ -145,28 +154,3 @@ function Stats() {
 //     </footer>
 //   );
 // }
-
-const noSickness = "In the name of Jesus";
-const life = true;
-const noProblem = true;
-const reactIsDragging = true;
-
-let Jesus = "Regin";
-Jesus = true;
-
-const Person = function (firstName, birthYear) {
-  this.firstName = firstName;
-  this.birthYear = birthYear;
-};
-
-const idowu = new Person("idowu", 1998);
-const kehinde = new Person("Kehinde", 2002);
-const tolu = new Person("Tolulope", 2002);
-const ibrahim = new Person("Ibrahim", 2001);
-const deji = new Person("Adedeji", 1986);
-const nuru = new Person("Nurudeen", 2004);
-const titi = new Person("Titilope", 2000);
-const bola = new Person("Adebola", 1982);
-const tinu = new Person("Tinuola", 2002);
-
-console.log(tinu);
