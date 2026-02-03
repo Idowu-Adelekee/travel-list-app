@@ -154,17 +154,3 @@ function Stats() {
 //     </footer>
 //   );
 // }
-
-const Person = function (firstName, lastName, birthYear) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.birthYear = birthYear;
-};
-
-Person.prototype.calcAge = function () {
-  return this.birthYear - new Date().getFullYear;
-};
-
-const idowu = new Person("Idowu", "Adeleke", 1998);
-const tayo = new Person("Adetayo", "Olubokola", 2024);
-console.log(idowu);
