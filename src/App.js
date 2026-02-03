@@ -166,4 +166,5 @@ Person.prototype.calcAge = function () {
 };
 
 const idowu = new Person("Idowu", "Adeleke", 1998);
+const tayo = new Person("Adetayo", "Olubokola", 2024);
 console.log(idowu);
