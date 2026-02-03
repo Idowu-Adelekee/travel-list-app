@@ -154,3 +154,7 @@ function Stats() {
 //     </footer>
 //   );
 // }
+
+
+const fromArr = Array.from({length: 30} (_, i) => i + 1);
+console.log(fromArr);
