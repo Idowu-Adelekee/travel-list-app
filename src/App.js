@@ -160,5 +160,6 @@ const fromArr = Array.from({ length: 30 }, (_, i) => i + 1).map(
 );
 
 const useless = "Landlord";
+const challenge = "False";
 
 console.log(fromArr);
