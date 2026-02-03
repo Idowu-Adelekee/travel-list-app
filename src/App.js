@@ -154,3 +154,5 @@ function Stats() {
 //     </footer>
 //   );
 // }
+
+const Person = function () {};
