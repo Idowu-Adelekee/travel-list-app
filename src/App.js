@@ -23,19 +23,19 @@ function Logo() {
   return <h1>🌲Far Away 💼</h1>;
 }
 function Form() {
-  const [quantity, setQuantity] = useState(1);
   const [description, setDescription] = useState("");
+  const [quantity, setQuantity] = useState(1);
 
   function handleSubmit(e) {
     e.preventDefault();
 
-    const newItems = {
-      quantity,
+    const newEntry = {
       description,
+      quantity,
       id: Date.now(),
+      isPacked: true,
     };
-
-    console.log(newItems);
+    console.log(newEntry);
   }
 
   return (
@@ -45,7 +45,7 @@ function Form() {
         onChange={(e) => setQuantity(Number(e.target.value))}
       >
         {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
-          <option key={num}>{Number(num)}</option>
+          <option key={num}>{num}</option>
         ))}
       </select>
       <input
@@ -53,7 +53,7 @@ function Form() {
         placeholder="Item..."
         value={description}
         onChange={(e) => setDescription(e.target.value)}
-      ></input>
+      />
       <button>Add</button>
     </form>
   );
