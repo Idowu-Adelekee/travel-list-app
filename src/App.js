@@ -185,3 +185,4 @@ console.log("How are you");
 console.log("Daily commit");
 
 const birthYear = function () {};
+birthYear();
