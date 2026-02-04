@@ -186,3 +186,11 @@ console.log("Daily commit");
 
 const birthYear = function () {};
 birthYear();
+
+class Person {
+  constructor(birthYear, firstName, lastName) {
+    this.birthYear = birthYear;
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+}
