@@ -1,5 +1,5 @@
 import { fireEvent } from "@testing-library/dom";
-import { useState } from "react";
+import { use, useState } from "react";
 
 const initialItems = [
   { id: 1, description: "Passports", quantity: 2, packed: false },
@@ -22,24 +22,26 @@ export default function App() {
 function Logo() {
   return <h1>🌲Far Away 💼</h1>;
 }
+
 function Form() {
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
 
   function handleSubmit(e) {
     e.preventDefault();
-
     const newEntry = {
-      description,
       quantity,
+      description,
       id: Date.now(),
       isPacked: true,
     };
+
     console.log(newEntry);
   }
 
   return (
     <form className="add-form" onSubmit={handleSubmit}>
+      {" "}
       <select
         value={quantity}
         onChange={(e) => setQuantity(Number(e.target.value))}
@@ -50,7 +52,7 @@ function Form() {
       </select>
       <input
         type="text"
-        placeholder="Item..."
+        placeholder="New item..."
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
@@ -177,5 +179,44 @@ function Stats() {
 //     <footer className="stats">
 //       <em>💼You have X items on your list, and you already packed X (X%)</em>
 //     </footer>
+//   );
+// }
+
+//_______________________________
+
+// function Form() {
+//   const [description, setDescription] = useState("");
+//   const [quantity, setQuantity] = useState(1);
+
+//   function handleSubmit(e) {
+//     e.preventDefault();
+
+//     const newEntry = {
+//       description,
+//       quantity,
+//       id: Date.now(),
+//       isPacked: true,
+//     };
+//     console.log(newEntry);
+//   }
+
+//   return (
+//     <form className="add-form" onSubmit={handleSubmit}>
+//       <select
+//         value={quantity}
+//         onChange={(e) => setQuantity(Number(e.target.value))}
+//       >
+//         {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
+//           <option key={num}>{num}</option>
+//         ))}
+//       </select>
+//       <input
+//         type="text"
+//         placeholder="Item..."
+//         value={description}
+//         onChange={(e) => setDescription(e.target.value)}
+//       />
+//       <button>Add</button>
+//     </form>
 //   );
 // }
