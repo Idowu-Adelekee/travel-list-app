@@ -92,18 +92,6 @@ function Stats() {
   );
 }
 
-//   function handleSubmit(e) {
-//     e.preventDefault();
-
-//     const newEntry = {
-//       description,
-//       quantity,
-//       id: Date.now(),
-//       isPacked: true,
-//     };
-//     console.log(newEntry);
-//   }
-
 //   return (
 //     <form className="add-form" onSubmit={handleSubmit}>
 //       <select
