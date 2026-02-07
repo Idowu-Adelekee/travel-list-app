@@ -92,15 +92,6 @@ function Stats() {
   );
 }
 
-//   return (
-//     <form className="add-form" onSubmit={handleSubmit}>
-//       <select
-//         value={quantity}
-//         onChange={(e) => setQuantity(Number(e.target.value))}
-//       >
-//         {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
-//           <option key={num}>{num}</option>
-//         ))}
 //       </select>
 //       <input
 //         type="text"
