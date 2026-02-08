@@ -96,9 +96,3 @@ function Stats() {
     </footer>
   );
 }
-
-// const newObj = [{ name: "Idowu", age: 28 }];
-// // console.log(newObj);
-
-// const newArr = [...newObj, newObj];
-// console.log(newArr);
