@@ -29,7 +29,7 @@ function Form() {
   const [items, setItems] = useState([]);
 
   function handleAddItems(item) {
-    setItems((items) => [...items, item]);
+    setItems((items) => [...items], item);
   }
 
   function handleSubmit(e) {
@@ -97,7 +97,8 @@ function Stats() {
   );
 }
 
-const newObj = { name: "Idowu", age: 28 };
-console.log(newObj);
+// const newObj = [{ name: "Idowu", age: 28 }];
+// // console.log(newObj);
 
-const newArr = [...newObj, obj];
+// const newArr = [...newObj, newObj];
+// console.log(newArr);
