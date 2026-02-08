@@ -28,10 +28,9 @@ function Form() {
   const [quantity, setQuantity] = useState(1);
   const [items, setItems] = useState([]);
 
-  function handleAddItems(item) {
-    setItems((items) => [...items], item);
+  function handleNewItem(item) {
+    setItems((items) => [...items, item]);
   }
-
   function handleSubmit(e) {
     e.preventDefault();
     const newItem = {
@@ -41,7 +40,7 @@ function Form() {
       isPacked: true,
     };
 
-    handleAddItems(newItem);
+    handleNewItem(newItem);
   }
 
   return (
