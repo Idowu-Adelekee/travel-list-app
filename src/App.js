@@ -41,8 +41,6 @@ function Form({ onAddItems }) {
       id: Date.now(),
       isPacked: true,
     };
-
-    onAddItems(newItem);
   }
 
   return (
