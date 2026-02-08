@@ -91,3 +91,5 @@ function Stats() {
     </footer>
   );
 }
+
+console.log("We are here again");
