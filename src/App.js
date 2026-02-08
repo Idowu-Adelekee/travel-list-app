@@ -1,4 +1,4 @@
-import { fireEvent } from "@testing-library/dom";
+// import { fireEvent } from "@testing-library/dom";
 import { use, useState } from "react";
 
 const initialItems = [
@@ -26,17 +26,22 @@ function Logo() {
 function Form() {
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
+  const [items, setItems] = useState([]);
+
+  function handleAddItems(item) {
+    setItems((items) => [...items, item]);
+  }
 
   function handleSubmit(e) {
     e.preventDefault();
-    const newEntry = {
+    const newItem = {
       quantity,
       description,
       id: Date.now(),
       isPacked: true,
     };
 
-    console.log(newEntry);
+    handleAddItems(newItem);
   }
 
   return (
@@ -92,4 +97,7 @@ function Stats() {
   );
 }
 
-console.log("We are here again");
+const newObj = { name: "Idowu", age: 28 };
+console.log(newObj);
+
+const newArr = [...newObj, obj];
