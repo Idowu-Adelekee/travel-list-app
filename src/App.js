@@ -114,12 +114,3 @@ function Stats() {
     </footer>
   );
 }
-
-console.log("git");
-console.log("Measure");
-console.log("Commitment");
-console.log("Commitment");
-console.log("Commitment");
-console.log("Commitment");
-console.log("Commitment");
-console.log("Hello man");
