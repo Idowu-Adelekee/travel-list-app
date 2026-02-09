@@ -116,3 +116,4 @@ function Stats() {
 }
 
 console.log("git");
+console.log("Measure");
