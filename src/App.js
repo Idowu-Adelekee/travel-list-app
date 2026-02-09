@@ -15,11 +15,23 @@ export default function App() {
     setItems((items) => [...items, item]);
   }
 
+  function handleDeleteItem(id) {
+    setItems((items) => items.filter((item) => item.id !== id));
+  }
+
+  function handleToggleItem(id) {
+    setItems((items) =>
+      items.map((item) =>
+        item.id === id ? { ...item, packed: !item.packed } : item,
+      ),
+    );
+  }
+
   return (
     <div className="app">
       <Logo />
       <Form onAddItems={handleNewItem} />
-      <ParkingList items={items} />
+      <ParkingList items={items} onDeleteItem={handleDeleteItem} />
       <Stats />
     </div>
   );
@@ -35,12 +47,17 @@ function Form({ onAddItems }) {
 
   function handleSubmit(e) {
     e.preventDefault();
+
+    if (!description) return;
+
     const newItem = {
       quantity,
       description,
       id: Date.now(),
       isPacked: true,
     };
+
+    onAddItems(newItem);
   }
 
   return (
@@ -65,26 +82,27 @@ function Form({ onAddItems }) {
   );
 }
 
-function ParkingList({ items }) {
+function ParkingList({ items, onDeleteItem }) {
   console.log(items);
   return (
     <div className="list">
       <ul>
         {items.map((item) => (
-          <Item item={item} key={item.id} />
+          <Item item={item} onDeleteItem={onDeleteItem} key={item.id} />
         ))}
       </ul>
     </div>
   );
 }
 
-function Item({ item }) {
+function Item({ item, onDeleteItem }) {
   return (
     <li>
+      <input type="checkbox" value={item.packed} onChange={() => {}} />
       <span style={item.packed ? { textDecoration: "line-through" } : {}}>
         {item.description} {item.quantity}
       </span>
-      <span>❌</span>
+      <button onClick={() => onDeleteItem(item.id)}>❌</button>
     </li>
   );
 }
@@ -96,3 +114,5 @@ function Stats() {
     </footer>
   );
 }
+
+console.log("git");
