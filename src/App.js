@@ -178,3 +178,5 @@ function Stats({ items }) {
     </footer>
   );
 }
+
+const rebecca = "Rebecca";
