@@ -178,11 +178,3 @@ function Stats({ items }) {
     </footer>
   );
 }
-
-const rebecca = "Rebecca";
-const john = "John";
-const tosin = "Oluwatosin";
-const joseph = "Joseph";
-const noble = "Noble";
-const tonia = "Tonia";
-const yusuf = "Yusuf";
