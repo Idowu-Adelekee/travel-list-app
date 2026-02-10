@@ -180,3 +180,4 @@ function Stats({ items }) {
 }
 
 const rebecca = "Rebecca";
+const john = "John";
