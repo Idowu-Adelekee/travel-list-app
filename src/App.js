@@ -182,3 +182,4 @@ function Stats({ items }) {
 const today = "Work on gain more";
 const noble = "Idowu Adeleke";
 const asake = "Mr. Money";
+const love = "Valentine";
