@@ -185,3 +185,4 @@ const asake = "Mr. Money";
 const love = "Valentine";
 const wura = "Wuraola";
 const toast = "Greatness";
+const gratitude = "Thank you God for my Joy, thank you for my healing";
