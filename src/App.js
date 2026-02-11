@@ -184,3 +184,4 @@ const noble = "Idowu Adeleke";
 const asake = "Mr. Money";
 const love = "Valentine";
 const wura = "Wuraola";
+const toast = "Greatness";
