@@ -352,6 +352,9 @@ const essentialData = books.map((book) => ({
 
 console.log(essentialData);
 
+const longBooks = books.filter((book) => book.pages >= 500);
+console.log(longBooks);
+
 // Destructuring Review
 // const book = getBook(3);
 
