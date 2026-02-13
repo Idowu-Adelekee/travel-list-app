@@ -380,6 +380,46 @@ console.log("orange".localeCompare("apples"));
 console.log("orange".localeCompare("orange"));
 
 // Working with Immutable arrays
+// 1) Add book object to Array
+const newBook = {
+  id: 6,
+  title: "Harry Potter and the Chamber of Secrets",
+};
+
+const booksAfterAdd = [...books, newBook];
+console.log(booksAfterAdd);
+
+// 2) Delete book object from an array
+const booksAfterDelete = booksAfterAdd.filter((book) => book.id !== 6);
+console.log(booksAfterDelete);
+
+// Update the book object in the array
+const booksAfterUpdate = booksAfterDelete.map((book) =>
+  book.id === 1 ? { ...book, pages: 1 } : book,
+);
+
+console.log(booksAfterUpdate);
+
+// const correctNobleArr = nobleArr.map((detail) =>
+//   detail.lastName === "Adedotun"
+//     ? { lastName: "Adeleke" }
+//     : detail && detail.middleName === "Adeleke"
+//       ? { middleName: "Adedotun" }
+//       : detail,
+// );
+
+const nobleArr = [
+  { name: "Idowu" },
+  { age: 28 },
+  { lastName: "Adedotun" },
+  { middleName: "Adeleke" },
+];
+
+const correctNobleArr = nobleArr.map((detail) =>
+  detail.lastName === "Adedotun" ? { lastName: "Adeleke" } : detail,
+);
+
+console.log(correctNobleArr);
 
 // Destructuring Review
 // const book = getBook(3);
