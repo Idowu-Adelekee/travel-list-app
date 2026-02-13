@@ -421,36 +421,16 @@ const correctNobleArr = nobleArr.map((detail) =>
 
 console.log(correctNobleArr);
 
-// Destructuring Review
-// const book = getBook(3);
+// Array.slice
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// let arr = ["a", "b", "c", "d", "e"];
+// console.log(arr.slice(2));
+// const allArray = arr.slice(1, 3);
+// const lastArry = arr.slice(-1);
+// console.log(lastArry);
+// console.log(allArray);
+// console.log(arr);
 
-// const { title, author, publicationDate, pages, genres, hasMovieAdaptation } =
-//   book;
-// console.log(title, author, publicationDate);
+// Array.sort revisited
 
-// const [primary, secondary, ...others] = genres;
-// console.log(primary, secondary);
-// console.log(others);
-
-// const newGenres = [...genres, "epic fantasy"];
-
-// const updatedBook = {
-//   ...book,
-
-//   // Adding a new property
-//   moviePublicationDate: "2001-12-19",
-
-//   // Overwriting existing property
-//   hasMovieAdaptation: false,
-// };
-// console.log(updatedBook);
-
-// function getTotalReviewCount(book) {
-//   const goodRead = book.reviews.goodreads.reviewsCount;
-//   const librarything = book.reviews.librarything?.reviewsCount ?? 0;
-
-//   console.log(book.librarything.reviewsCount);
-//   return goodRead + librarything;
-// }
-
-// console.log(getTotalReviewCount(book));
+const owners = ["Jonas", "Zach", "Adam", "Martha"];
