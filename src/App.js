@@ -352,8 +352,24 @@ const essentialData = books.map((book) => ({
 
 console.log(essentialData);
 
-const longBooks = books.filter((book) => book.pages >= 500);
+const longBooks = books
+  .filter((book) => book.pages >= 500)
+  .filter((book) => book.hasMovieAdaptation);
 console.log(longBooks);
+
+const adventureBooks = books
+  .filter((book) => book.genres.includes("adventure"))
+  .map((book) => book.title);
+
+console.log(adventureBooks);
+
+const allBooksPages = books.reduce((acc, book) => acc + book.pages, 0);
+console.log(allBooksPages);
+
+// Array.sort
+const y = [3, 7, 1, 9, 6];
+const sorted = x.sort((a, b) => a - b);
+console.log(sorted);
 
 // Destructuring Review
 // const book = getBook(3);
