@@ -330,51 +330,56 @@ function getBook(id) {
 const books = getBooks();
 const book = getBook(2);
 
-const x = [1, 2, 3, 4, 5].map((el) => el * 2);
+// const x = [1, 2, 3, 4, 5].map((el) => el * 2);
 
-const titles = books.map((book) => book.title);
+// const titles = books.map((book) => book.title);
 
-function getTotalReviewCount(book) {
-  console.log(book);
-  return (
-    book?.reviews?.goodreads?.reviewsCount +
-      book?.reviews?.librarything?.reviewsCount ?? 0
-  );
-}
+// function getTotalReviewCount(book) {
+//   console.log(book);
+//   return (
+//     book?.reviews?.goodreads?.reviewsCount +
+//       book?.reviews?.librarything?.reviewsCount ?? 0
+//   );
+// }
 
-getTotalReviewCount(book);
+// getTotalReviewCount(book);
 
-const essentialData = books.map((book) => ({
-  title: book.title,
-  author: book.author,
-  reviewsCount: getTotalReviewCount(book),
-}));
+// const essentialData = books.map((book) => ({
+//   title: book.title,
+//   author: book.author,
+//   reviewsCount: getTotalReviewCount(book),
+// }));
 
-console.log(essentialData);
+// console.log(essentialData);
 
-const longBooks = books
-  .filter((book) => book.pages >= 500)
-  .filter((book) => book.hasMovieAdaptation);
-console.log(longBooks);
+// const longBooks = books
+//   .filter((book) => book.pages >= 500)
+//   .filter((book) => book.hasMovieAdaptation);
+// console.log(longBooks);
 
-const adventureBooks = books
-  .filter((book) => book.genres.includes("adventure"))
-  .map((book) => book.title);
+// const adventureBooks = books
+//   .filter((book) => book.genres.includes("adventure"))
+//   .map((book) => book.title);
 
-console.log(adventureBooks);
+// console.log(adventureBooks);
 
-const allBooksPages = books.reduce((acc, book) => acc + book.pages, 0);
-console.log(allBooksPages);
+// const allBooksPages = books.reduce((acc, book) => acc + book.pages, 0);
+// console.log(allBooksPages);
 
-// Array.sort
-const y = [3, 7, 1, 9, 6];
-const ascending = y.slice().sort((a, b) => a - b);
-const descending = y.slice().sort((a, b) => b - a);
-console.log(ascending, descending);
-console.log(y);
+// // Array.sort
+// const y = [3, 7, 1, 9, 6];
+// const ascending = y.slice().sort((a, b) => a - b);
+// const descending = y.slice().sort((a, b) => b - a);
+// console.log(ascending, descending);
+// console.log(y);
 
-const sortedByPages = books.slice().sort((a, b) => b.pages - a.pages);
-console.log(sortedByPages);
+// const sortedByPages = books.slice().sort((a, b) => b.pages - a.pages);
+// console.log(sortedByPages);
+console.log("apple".localeCompare("orange"));
+console.log("orange".localeCompare("apples"));
+console.log("orange".localeCompare("orange"));
+
+// Working with Immutable arrays
 
 // Destructuring Review
 // const book = getBook(3);
