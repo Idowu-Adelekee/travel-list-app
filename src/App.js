@@ -368,8 +368,13 @@ console.log(allBooksPages);
 
 // Array.sort
 const y = [3, 7, 1, 9, 6];
-const sorted = x.sort((a, b) => a - b);
-console.log(sorted);
+const ascending = y.slice().sort((a, b) => a - b);
+const descending = y.slice().sort((a, b) => b - a);
+console.log(ascending, descending);
+console.log(y);
+
+const sortedByPages = books.slice().sort((a, b) => b.pages - a.pages);
+console.log(sortedByPages);
 
 // Destructuring Review
 // const book = getBook(3);
