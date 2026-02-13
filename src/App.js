@@ -327,26 +327,61 @@ function getBook(id) {
   return data.find((d) => d.id === id);
 }
 
+const books = getBooks();
+const book = getBook(2);
+
+const x = [1, 2, 3, 4, 5].map((el) => el * 2);
+
+const titles = books.map((book) => book.title);
+
+function getTotalReviewCount(book) {
+  console.log(book);
+  return (
+    book?.reviews?.goodreads?.reviewsCount +
+      book?.reviews?.librarything?.reviewsCount ?? 0
+  );
+}
+
+getTotalReviewCount(book);
+
+const essentialData = books.map((book) => ({
+  title: book.title,
+  author: book.author,
+  reviewsCount: getTotalReviewCount(book),
+}));
+
+console.log(essentialData);
+
 // Destructuring Review
-const book = getBook(1);
+// const book = getBook(3);
 
-const { title, author, publicationDate, pages, genres, hasMovieAdaptation } =
-  book;
-console.log(title, author, publicationDate);
+// const { title, author, publicationDate, pages, genres, hasMovieAdaptation } =
+//   book;
+// console.log(title, author, publicationDate);
 
-const [primary, secondary, ...others] = genres;
-console.log(primary, secondary);
-console.log(others);
+// const [primary, secondary, ...others] = genres;
+// console.log(primary, secondary);
+// console.log(others);
 
-const newGenres = [...genres, "epic fantasy"];
+// const newGenres = [...genres, "epic fantasy"];
 
-const updatedBook = {
-  ...book,
+// const updatedBook = {
+//   ...book,
 
-  // Adding a new property
-  moviePublicationDate: "2001-12-19",
+//   // Adding a new property
+//   moviePublicationDate: "2001-12-19",
 
-  // Overwriting existing property
-  hasMovieAdaptation: false,
-};
-console.log(updatedBook);
+//   // Overwriting existing property
+//   hasMovieAdaptation: false,
+// };
+// console.log(updatedBook);
+
+// function getTotalReviewCount(book) {
+//   const goodRead = book.reviews.goodreads.reviewsCount;
+//   const librarything = book.reviews.librarything?.reviewsCount ?? 0;
+
+//   console.log(book.librarything.reviewsCount);
+//   return goodRead + librarything;
+// }
+
+// console.log(getTotalReviewCount(book));
