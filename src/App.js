@@ -7,17 +7,6 @@ const initialItems = [
   { id: 3, description: "Charger", quantity: 1, packed: true },
 ];
 
-export default function App() {
-  return (
-    <div className="app">
-      <Logo />
-      <Form />
-      <PackingList />
-      <Stat />
-    </div>
-  );
-}
-
 // Original From Jonas
 // export default function App() {
 //   return (
