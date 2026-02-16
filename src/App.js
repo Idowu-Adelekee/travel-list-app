@@ -434,3 +434,14 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // Array.sort revisited
 
 const owners = ["Jonas", "Zach", "Adam", "Martha"];
+console.log(owners);
+console.log(owners.slice().sort((a, b) => a - b));
+console.log(owners.slice().sort((a, b) => b - a));
+console.log(owners.slice().sort());
+
+console.log(movements);
+console.log(owners);
+
+const ascendingSorted = movements.slice(sort(a, b) => {
+  if (a > b) 
+})
