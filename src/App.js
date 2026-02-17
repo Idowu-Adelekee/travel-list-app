@@ -320,4 +320,5 @@ function Stats() {
 // }
 
 const noble = "idowu";
-const noble = "idowu";
+const idowu = "idowu";
+const siaka = "Isiaka";
