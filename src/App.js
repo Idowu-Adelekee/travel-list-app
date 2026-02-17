@@ -318,9 +318,3 @@ function Stats() {
 //     </footer>
 //   );
 // }
-
-const noble = "idowu";
-const idowu = "idowu";
-const siaka = "Isiaka";
-const john = "John";
-const Tomorrow = "On God";
