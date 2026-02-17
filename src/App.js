@@ -322,3 +322,4 @@ function Stats() {
 const noble = "idowu";
 const idowu = "idowu";
 const siaka = "Isiaka";
+const john = "John";
