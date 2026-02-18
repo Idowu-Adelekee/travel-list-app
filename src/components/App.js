@@ -52,3 +52,5 @@ export default function App() {
     </div>
   );
 }
+
+const noble = "Idowu";
