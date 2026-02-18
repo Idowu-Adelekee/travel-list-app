@@ -52,9 +52,3 @@ export default function App() {
     </div>
   );
 }
-
-const noble = "Idowu";
-const adeleke = "Idowu";
-const omoOba = "Idowu";
-const adedotun = "Idowu";
-const Idowu = "Idowu";
