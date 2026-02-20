@@ -30,7 +30,7 @@ export default function App() {
     );
   }
 
-  function handleClearList(tem) {
+  function handleClearList() {
     const confirmed = window.confirm(
       "Are you sure you want to delete all items?",
     );
