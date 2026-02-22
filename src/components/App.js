@@ -56,3 +56,5 @@ export default function App() {
 const idowu = "Idowu";
 const noble = "Noble";
 const ibile = "Ibile";
+const dotun = "Adedotun";
+const leke = "Adeleke";
