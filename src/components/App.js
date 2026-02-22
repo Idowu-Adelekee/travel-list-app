@@ -54,4 +54,5 @@ export default function App() {
 }
 
 const idowu = "Idowu";
-const noble = 'Noble";';
+const noble = "Noble";
+const ibile = "Ibile";
