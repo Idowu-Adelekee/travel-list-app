@@ -52,3 +52,5 @@ export default function App() {
     </div>
   );
 }
+
+const idowu = "Idowu";
