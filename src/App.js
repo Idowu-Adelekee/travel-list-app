@@ -91,12 +91,3 @@ function Stats() {
     </footer>
   );
 }
-
-const hello = "man";
-const hello = "man";
-const hello = "man";
-const hello = "man";
-const hello = "man";
-const hello = "man";
-const hello = "man";
-const hello = "man";
