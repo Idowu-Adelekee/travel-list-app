@@ -95,3 +95,5 @@ function Stats() {
 const hello = "man";
 const hello = "man";
 const hello = "man";
+const hello = "man";
+const hello = "man";
