@@ -91,3 +91,5 @@ function Stats() {
     </footer>
   );
 }
+
+const hello = "man";
